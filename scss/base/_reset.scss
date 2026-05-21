@@ -1,0 +1,56 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* Smooth scroll */
+html {
+	scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1,5;
+	text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/* Make images easier to work with */
+img, 
+picture {
+	max-width: 100%;
+	display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	border: none;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
