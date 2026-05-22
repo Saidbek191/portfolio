@@ -1,1 +1,149 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../../assets/fonts/sora_5.2.8/webfonts/sora-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../../assets/fonts/sora_5.2.8/webfonts/sora-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../../assets/fonts/sora_5.2.8/webfonts/sora-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../../assets/fonts/sora_5.2.8/webfonts/sora-latin-ext-800-normal.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1, 5;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 3.5;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 3;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 2.75;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 2.5;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #71717a;
+}
+
+.text-sm {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.text-muted {
+  color: #d4d4d8;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
