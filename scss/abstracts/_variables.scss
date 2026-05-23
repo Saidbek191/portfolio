@@ -3,9 +3,9 @@ $font-size-base: 16px;
 
 $line-height-base: 1.5;
 
-$color-text-dark: #000;
+$color-dark: #000;
+$color-light: #fff;
 $color-text-netural: #404040;
-$color-text-light: #fff;
 $color-zinc100: #f4f4f5;
 $color-zinc200: #e4e4e7;
 $color-zinc300: #d4d4d8;
@@ -22,12 +22,33 @@ $fs-2xl: 32px;
 $fs-3xl: 36px;
 $fs-4xl: 40px;
 
-$lh-tight-sm: 1;
-$lh-tight-md: 1.25;
-$lh-normal-sm: 1.5;
-$lh-normal-md: 1.75;
-$lh-normal-lg: 2;
-$lh-loose-sm: 2.5;
-$lh-loose-md: 2.75;
-$lh-loose-lg: 3;
-$lh-loose-extr-lg: 3.5;
+$lh-tight-sm: 1; // 16px
+$lh-tight-md: 1.25; // 20px
+$lh-normal-sm: 1.5; // 24px
+$lh-normal-md: 1.75; // 28px
+$lh-normal-lg: 2; // 32px
+$lh-loose-sm: 2.5; // 40px
+$lh-loose-md: 2.75; // 44px
+$lh-loose-lg: 3; // 48px
+$lh-loose-extr-lg: 3.5; // 56px
+
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 28px;
+$space-8: 32px;
+$space-9: 36px;
+$space-10: 40px;
+$space-11: 44px;
+$space-12: 48px;
+$space-13: 52px;
+$space-14: 56px;
+$space-15: 60px;
+$space-16: 64px;
+$space-17: 68px;
+$space-18: 72px;
+$space-19: 76px;
+$space-20: 80px;

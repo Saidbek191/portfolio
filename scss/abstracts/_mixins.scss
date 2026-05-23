@@ -1,0 +1,42 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin container {
+	width: min(1200px, 90%);
+	margin: 0 auto;
+}
+
+@mixin button-reset {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin absolute-center-y {
+	position: absolute;
+	right: 12%;
+	transform: translateY(10%);
+}
+
+@mixin hover-opacity {
+	transition: opacity 0.3s ease;
+	&:hover {
+		opacity: 0.8;
+	}
+}

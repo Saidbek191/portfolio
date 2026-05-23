@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/language.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/projects.js" defer></script>
     <title>Saidbek Kodirov</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="assets/images/logo-black.png" alt="logo" />
-        <a href="#home">Saidbek Kodirov</a>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="list__item"><a href="#">Home</a></li>
-          <li class="list__item"><a href="#">About Me</a></li>
-          <li class="list__item"><a href="#">Projects</a></li>
-          <li class="list__item"><a href="#">Skills</a></li>
-          <li class="list__item"><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="assets/images/logo-black.png" alt="logo" />
+          <a href="#home">Saidbek Kodirov</a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="list__item"><a href="#">Home</a></li>
+            <li class="list__item"><a href="#">About Me</a></li>
+            <li class="list__item"><a href="#">Projects</a></li>
+            <li class="list__item"><a href="#">Skills</a></li>
+            <li class="list__item"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__btns-wrapper">
+          <div class="language">
+            <button class="language__current">EN</button>
+            <ul class="language__list">
+              <li data-lang="en">EN</li>
+              <li data-lang="pl">PL</li>
+              <li data-lang="ru">RU</li>
+            </ul>
+          </div>
+          <a href="#"
+            ><div class="header__btn-resume">
+              <img src="assets/icons/download.svg" alt="download" /></div
+          ></a>
+        </div>
+      </header>
+    </div>
   </body>
 </html>

@@ -1,7 +1,10 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 @font-face {
 	font-family: 'Sora';
 	src: url('../../assets/fonts/sora_5.2.8/webfonts/sora-latin-400-normal.woff2') format('woff2');
-		font-weight: 400;
+		font-weight: 400; // regular
 		font-style: normal;
 		font-display: swap;
 }
@@ -9,7 +12,7 @@
 @font-face {
 	font-family: 'Sora';
 	src: url('../../assets/fonts/sora_5.2.8/webfonts/sora-latin-600-normal.woff2') format('woff2');
-		font-weight: 600;
+		font-weight: 600; // semibold
 		font-style: normal;
 		font-display: swap;
 	}
@@ -17,7 +20,7 @@
 @font-face {
 	font-family: 'Sora';
 	src: url('../../assets/fonts/sora_5.2.8/webfonts/sora-latin-700-normal.woff2') format('woff2');
-		font-weight: 700;
+		font-weight: 700; // bold
 		font-style: normal;
 		font-display: swap;
 }
@@ -25,7 +28,11 @@
 @font-face {
 	font-family: 'Sora';
 	src: url('../../assets/fonts/sora_5.2.8/webfonts/sora-latin-ext-800-normal.woff2') format('woff2');
-	font-weight: 800;
+	font-weight: 800; // extra-bold
 	font-style: normal;
 	font-display: swap;
+}
+
+.container {
+	@include container;
 }

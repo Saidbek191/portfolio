@@ -11,5 +11,5 @@
 @use './layout/sections';
 
 @use './abstracts/media';
-@use './abstracts/mixins';
+@use './abstracts/mixins' as *;
 @use './abstracts/variables' as *;
