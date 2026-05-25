@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/* HEADER BUTTONS */
+
+	.header__btns-wrapper {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		@include laptop {
+			gap: 4px;
+		}
+		@include mobile {
+			display: none;
+		}
+	}
+	
+	.header__btn-resume {
+		border: 3px solid transparent;
+		background-color: $color-dark;
+		padding: $space-2 $space-4;
+		border-radius: 4px;
+		color: $color-light;
+		transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+		@include laptop {
+			padding: $space-2 $space-3;
+			font-size: $fs-sm;
+			line-height: $lh-tight-sm;
+			
+		}
+		&.active {
+			background-color: rgba(0, 0, 0, 0);
+			border-color: $color-dark;
+		}
+		.header__btn-resume-icon {
+			width: 17px;
+			height: 17px;
+			color: $color-light;
+			transition: color 0.3s ease-in-out;
+			&.active {
+				color: $color-dark;
+			}
+		}
+		&:hover {
+			@include hover-opacity;
+		}
+	}

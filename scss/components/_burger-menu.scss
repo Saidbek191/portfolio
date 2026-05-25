@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media' as *;
+
+/* BURGER MENU */ 
+	.burger-menu {
+		display: none;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		cursor: pointer;
+		margin-left: auto;
+		& span {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			height: 3px;
+			background-color: $color-dark;
+			border-radius: 2px;
+			transition: 0.3s ease;
+		}
+		@include mobile {
+			display: block;
+		}
+			&::before, 
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				background-color: $color-dark;
+				transition: transform 0.3s ease, opacity 0.3s ease;
+				border-radius: 2px;
+			}
+			&::before {
+				top: 0;
+			}
+			&::after {
+				bottom: 0;
+			}
+			&.active span {
+				opacity: 0;
+			}
+			&.active::before {
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+			}
+				&.active::after {
+					bottom: 50%;
+					transform: translateY(50%) rotate(-45deg);
+				}
+	}
