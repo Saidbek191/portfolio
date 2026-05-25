@@ -10,6 +10,6 @@
 @use './layout/header';
 @use './layout/sections';
 
-@use './abstracts/media';
+@use './abstracts/media' as *;
 @use './abstracts/mixins' as *;
 @use './abstracts/variables' as *;

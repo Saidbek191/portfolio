@@ -1,9 +1,12 @@
 const currentBtn = document.querySelector('.language__current');
 const langList = document.querySelector('.language__list');
 const resumeBtn = document.querySelector('.header__btn-resume');
+const resumeIcon = document.querySelector('.header__btn-resume-icon');
 
 resumeBtn.addEventListener('click', () => {
 	resumeBtn.classList.toggle('active');
+
+	resumeIcon.classList.toggle('active');
 });
 
 currentBtn.addEventListener('click', () => {
@@ -39,6 +42,5 @@ const langItems = document.querySelectorAll('[data-lang]');
 
 			currentBtn.classList.remove('active');
 			
-			resumeBtn.classList.remove('active');
 		}
 	});
