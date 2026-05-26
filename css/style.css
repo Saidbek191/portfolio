@@ -225,6 +225,9 @@ li a:hover::after {
   .burger-menu {
     display: block;
   }
+  .burger-menu.no-scroll {
+    overflow: hidden;
+  }
 }
 .burger-menu::before, .burger-menu::after {
   content: "";
@@ -258,10 +261,10 @@ li a:hover::after {
   display: none;
 }
 .mobile-menu .mobile-list {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .mobile-menu .mobile-list .list__item {
-  padding: 16px 4px;
+  padding: 12px 4px;
   margin: 0 40px;
 }
 .mobile-menu .mobile-list .list__item a {
@@ -301,6 +304,14 @@ li a:hover::after {
 @media screen and (max-width: 768px) {
   .header__btns-wrapper {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu__actions {
+    display: flex;
+    margin: 4px 44px;
+    gap: 28px;
   }
 }
 

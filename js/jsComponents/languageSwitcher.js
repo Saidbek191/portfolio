@@ -1,15 +1,27 @@
 
 /* LANGUAGE SWITCHER */ 
-const currentBtn = document.querySelector('.language__current');
-const langList = document.querySelector('.language__list');
+const languages = document.querySelectorAll('.language');
+languages.forEach(language => {
+	const currentBtn = language.querySelector('.language__current');
+	const langList = language.querySelector('.language__list');
+	const langItems = language.querySelectorAll('[data-lang]');
 
-currentBtn.addEventListener('click', () => {
-	langList.classList.toggle('active');
+	currentBtn.addEventListener('click', (e) => {
+		e.stopPropagation();
+		
+		langList.classList.toggle('active');
+		currentBtn.classList.toggle('active');
+	});
+	
+	document.addEventListener('click', (e) => {
+		if(!e.target.closest('.language')) {
+			langList.classList.remove('active');
+	
+			currentBtn.classList.remove('active');
+			
+		}
+	});
 
-	currentBtn.classList.toggle('active');
-});
-
-const langItems = document.querySelectorAll('[data-lang]');
 	langItems.forEach(item => {
 		item.addEventListener('click', () => {
 			const selectedLang = item.dataset.lang;
@@ -30,11 +42,4 @@ const langItems = document.querySelectorAll('[data-lang]');
 		currentBtn.textContent = savedLang.toUpperCase();
 	}
 
-	document.addEventListener('click', (e) => {
-		if(!e.target.closest('.language')) {
-			langList.classList.remove('active');
-
-			currentBtn.classList.remove('active');
-			
-		}
-	});
+});

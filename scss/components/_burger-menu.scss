@@ -19,6 +19,9 @@
 		}
 		@include tablet {
 			display: block;
+			&.no-scroll {
+				overflow: hidden;
+			}
 		}
 			&::before, 
 			&::after {

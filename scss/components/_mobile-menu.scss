@@ -7,9 +7,9 @@
 	.mobile-menu {
 		display: none;
 		.mobile-list {
-			margin-top: 50px;
+			margin-top: $space-5;
 			.list__item {
-				padding: $space-4 $space-1;
+				padding: $space-3 $space-1;
 				margin: 0 $space-10;
 				a {
 					font-size: $fs-4xl;	
