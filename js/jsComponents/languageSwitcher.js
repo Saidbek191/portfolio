@@ -1,20 +1,7 @@
+
+/* LANGUAGE SWITCHER */ 
 const currentBtn = document.querySelector('.language__current');
 const langList = document.querySelector('.language__list');
-const resumeBtn = document.querySelector('.header__btn-resume');
-const resumeIcon = document.querySelector('.header__btn-resume-icon');
-
-resumeBtn.addEventListener('click', () => {
-	resumeBtn.classList.toggle('active');
-	resumeIcon.classList.toggle('active');
-});
-
-document.addEventListener('click', (e) => {
-	if(!e.target.closest('.header__btn-resume')) {
-			resumeBtn.classList.remove('active');
-
-			resumeIcon.classList.remove('active');
-	}
-});
 
 currentBtn.addEventListener('click', () => {
 	langList.classList.toggle('active');
@@ -50,13 +37,4 @@ const langItems = document.querySelectorAll('[data-lang]');
 			currentBtn.classList.remove('active');
 			
 		}
-	});
-
-	const burger = document.querySelector('.burger-menu');
-	const nav = document.querySelector('.mobile-menu');
-
-	burger.addEventListener('click', () => {
-		burger.classList.toggle('active');
-
-		nav.classList.toggle('active');
 	});
