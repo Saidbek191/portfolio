@@ -193,9 +193,11 @@ li a::after {
   background-color: #000;
   transform: scaleX(0);
   transform-origin: left;
+  opacity: 0;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 li a:hover {
+  opacity: 1;
   color: #404040;
 }
 li a:hover::after {
