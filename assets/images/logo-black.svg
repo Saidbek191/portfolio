@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="150px" height="200px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 150 200"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#898989}
+    .fil2 {fill:#434242}
+    .fil1 {fill:#2B2A29}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2330178164416">
+   <polygon class="fil0" points="27,92 46,62 44,49 14,95 "/>
+   <polygon class="fil0" points="46,62 76,81 90,78 44,49 "/>
+   <polygon class="fil1" points="76,81 57,111 60,124 90,78 "/>
+   <polygon class="fil2" points="57,111 76,81 46,62 27,92 "/>
+   <polygon class="fil1" points="57,111 27,92 14,95 60,124 "/>
+   <polygon class="fil0" points="56,46 75,16 73,3 43,50 "/>
+   <polygon class="fil0" points="75,16 105,35 119,32 73,3 "/>
+   <polygon class="fil1" points="105,35 86,65 89,79 119,32 "/>
+   <polygon class="fil2" points="86,65 105,35 75,16 56,46 "/>
+   <polygon class="fil1" points="86,65 56,46 43,50 89,79 "/>
+   <polygon class="fil0" points="72,122 92,92 89,79 59,125 "/>
+   <polygon class="fil0" points="92,92 121,111 135,108 89,79 "/>
+   <polygon class="fil1" points="121,111 102,141 105,154 135,108 "/>
+   <polygon class="fil2" points="102,141 121,111 92,92 72,122 "/>
+   <polygon class="fil1" points="102,141 72,122 59,125 105,154 "/>
+   <polygon class="fil0" points="43,168 62,137 60,124 30,171 "/>
+   <polygon class="fil0" points="62,137 92,156 106,153 60,124 "/>
+   <polygon class="fil1" points="92,156 73,187 76,200 106,153 "/>
+   <polygon class="fil2" points="73,187 92,156 62,137 43,168 "/>
+   <polygon class="fil1" points="73,187 43,168 30,171 76,200 "/>
+  </g>
+ </g>
+</svg>

@@ -36,3 +36,22 @@
 .container {
 	@include container;
 }
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	
+	font-family: $font-main;
+	background-color: $color-light;
+	color: $color-dark;;
+}
+
+main {
+	flex-grow: 1;
+}
