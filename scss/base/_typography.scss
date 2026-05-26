@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+
+body {
+	font-family: $font-main;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+h1 {
+	font-size: $fs-4xl;
+	line-height: $lh-loose-extr-lg;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: $fs-3xl;
+	line-height: $lh-loose-lg;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: $fs-2xl;
+	line-height: $lh-loose-md;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: $fs-xl;
+	line-height: $lh-loose-sm;
+}
+
+h5 {
+	font-size: $fs-lg;
+	line-height: $lh-normal-lg;
+}
+
+h6 {
+	font-size: $fs-md;
+	line-height: $lh-normal-md;
+}
+
+
+p {
+	font-size: $fs-sm;
+	line-height: $lh-tight-md;
+	color: $color-zinc500;
+}
+
+.text-sm {
+	font-size: $fs-xs;
+	line-height: $lh-tight-sm;
+}
+
+.text-muted {
+	color: $color-zinc300;
+}
+
+.text-center {
+	text-align: center;
+}
+
