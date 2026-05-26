@@ -10,7 +10,7 @@
 		@include laptop {
 			gap: 4px;
 		}
-		@include mobile {
+		@include tablet {
 			display: none;
 		}
 	}

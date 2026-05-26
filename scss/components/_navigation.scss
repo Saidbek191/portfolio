@@ -8,12 +8,12 @@
 		ul {
 			display: flex;
 			gap: 32px;
-			@include tablet {
-				flex-direction: row;
+			@include laptop {
+				// flex-direction: row;
 				gap: 24px;
 				}
-				@include mobile {
-					display: none;	
+				@include tablet {
+					display: none;
 				}
 				&.active {
 				display: block;
@@ -28,6 +28,9 @@ li {
 		line-height: $lh-normal-sm;
 		color: $color-dark;
 		transition: color 0.3s ease, color 0.3s ease;
+		@include laptop {
+			font-size: $fs-sm;
+		}
 		
 		&::after {
 			content: '';

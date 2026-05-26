@@ -6,6 +6,9 @@
 .header {
 	@include flex-between;
 	padding: $space-5 $space-3;
+	@include laptop {
+		padding: $space-4 $space-3;
+	}
 }
 	
 	.header__logo {
@@ -15,7 +18,7 @@
 		img {
 			width: 30px;
 			height: 40px;
-			@include tablet {
+			@include laptop {
 				width: 25px;
 				height: 35px;
 			}
