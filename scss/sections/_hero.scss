@@ -1,0 +1,117 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/media' as *;
+@use '../abstracts/mixins' as *;
+.hero {}
+.hero__columns {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: $space-6;
+	@include laptop {
+		margin-top: $space-10;
+	}
+	@include tablet {
+		flex-direction: column-reverse;
+	}
+}
+.hero__information-column {
+	margin-top: $space-20;
+	@include laptop {
+		margin-top: $space-12;
+	}
+	.information-hero__title {
+		font-weight: 800;
+		font-size: $fs-6xl;
+		line-height: $lh-normal-sm;
+		letter-spacing: -6%;
+		@include laptop {
+			font-size: $fs-2xl;
+			letter-spacing: -4%;
+
+		}
+		@include tablet {
+			font-size: $fs-xl;
+			letter-spacing: -2;
+		}
+		.slim{
+			font-weight: 400;
+		}
+		.bold{}
+
+		.only-border {
+			// font-family: $font-main;
+			font-weight: 800;
+			font-size: $fs-6xl;
+			-webkit-text-stroke: 2px $color-dark;
+			color: transparent;
+			@include laptop {
+				font-size: $fs-2xl;
+				// -webkit-text-stroke: 1.4px $color-dark;
+			}
+		}
+	}
+	.information-hero__text {
+		color: $color-zinc500;
+		font-size: $fs-sm;
+		line-height: $lh-normal-sm;
+		letter-spacing: -2%;
+		margin-top: $space-8;
+		@include tablet {
+			line-height: $lh-normal-lg;
+		}
+	}
+}
+
+.image__wrapper {
+	position: relative;
+	margin-bottom: $space-15;
+	@include tablet {
+		margin-bottom: $space-12;
+	}
+}
+
+.hero__social-icons {
+	display: flex;
+	align-items: center;
+	gap: $space-8;
+	margin-top: $space-18;
+	@include tablet {
+		gap: $space-6;
+	}
+	.social__item {
+		width: 56px;
+		height: 56px;
+		padding: $space-4;
+		border: 3px solid $color-dark;
+		border-radius: 4px;
+		.icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+.image-hero__column {
+		img {
+			width: 100%;
+		}
+}
+
+.lines {
+	width: 40%;
+	height: 3px;
+	background-color: $color-dark;
+	border-radius: 2px;
+	position: absolute;
+	bottom: 1px;
+	left: -10px;
+	&::after{
+		content: "";
+		position: absolute;
+		right: -300px;
+		bottom: 0;
+		width: 80%;
+		height: 3px;
+		background-color: $color-dark;
+		border-radius: 2px;
+	}
+}

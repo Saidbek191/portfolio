@@ -9,7 +9,6 @@
 			display: flex;
 			gap: 32px;
 			@include laptop {
-				// flex-direction: row;
 				gap: 24px;
 				}
 				@include tablet {
@@ -27,7 +26,7 @@ li {
 		font-weight: 600;
 		line-height: $lh-normal-sm;
 		color: $color-dark;
-		transition: color 0.3s ease, color 0.3s ease;
+		transition: color 0.3s ease;
 		@include laptop {
 			font-size: $fs-sm;
 		}
@@ -42,11 +41,9 @@ li {
 			background-color: $color-dark;
 			transform: scaleX(0);
 			transform-origin: left;
-			opacity: 0;
 			transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 		&:hover {
-			opacity: 1;
 			color: $color-text-netural;
 		}
 		&:hover::after {
