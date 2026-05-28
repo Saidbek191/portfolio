@@ -3,8 +3,12 @@
 @use '../abstracts/media' as *;
 
 /* NAVIGATION */ 
-
+	.header__wrapper {
+		@include flex-between;
+		height: 56px;
+	}
 	.header__nav {
+		padding: $space-4 0;
 		ul {
 			display: flex;
 			gap: 32px;

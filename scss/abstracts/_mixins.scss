@@ -14,8 +14,11 @@
 }
 
 @mixin container {
-	width: min(1200px, 90%);
+	width: 100%;
+	max-width: 1216px;
+
 	margin: 0 auto;
+	padding: 0 $space-3;
 }
 
 @mixin button-reset {

@@ -4,11 +4,18 @@
 /* HEADER */ 
 
 .header {
-	@include flex-between;
-	margin: $space-5 $space-3;
-	@include laptop {
-		margin: $space-4 $space-3;
-	}
+	background-color: $color-light;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	
+	// margin: 0 0 $space-5 0;
+	// @include laptop {
+	// 	margin: $space-4 $space-3;
+	// }
 }
 	
 	.header__logo {
