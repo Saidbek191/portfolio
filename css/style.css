@@ -597,15 +597,13 @@ li a:hover::after {
   align-self: flex-start;
 }
 
-.about-me__title {
+.title {
   margin-bottom: 20px;
-}
-.about-me__title .light--title {
   line-height: 3.5;
   font-size: 48px;
   font-weight: 800;
 }
-.about-me__title .slim {
+.title .slim {
   font-weight: 400;
 }
 
@@ -787,6 +785,57 @@ li a:hover::after {
   .lines span {
     left: 190%;
   }
+}
+
+.projects {
+  background-color: #000;
+}
+
+.dark--title {
+  color: #fff;
+  text-align: center;
+}
+
+.projects__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.projects__columns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.projects__columns .column__img {
+  width: 550px;
+  height: 398px;
+  background-color: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 0 0 50%;
+}
+.projects__columns .column__img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.column__content .content__title {
+  color: #fff;
+  font-family: "Sora", sans-serif;
+}
+.column__content .content__subtitle {
+  color: #fff;
+}
+.column__content .content__text {
+  line-height: 1.5;
+}
+
+.content__buttons {
+  width: 20px;
+  height: 20px;
+  margin-top: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

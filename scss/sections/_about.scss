@@ -30,13 +30,11 @@
 .about-me__content {
 	align-self: flex-start;
 }
-.about-me__title {
-	margin-bottom: $space-5;
-	.light--title {
+.title {
+		margin-bottom: $space-5;
 		line-height: $lh-loose-extr-lg;
 		font-size: $fs-6xl;
 		font-weight: 800;
-	}
 	.slim {
 		font-weight: 400;
 	}
