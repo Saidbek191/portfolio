@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.about-me {
+	margin: $space-15 0;
+	@include laptop {
+		margin: $space-14 0;
+	}
+	@include tablet {
+		margin: $space-12 0;
+	}
+	@include mobile {
+		margin: $space-10 0;
+	}
+}
+.about-me__wrapper {
+	@include flex-between;
+	gap: $space-20;
+	@include laptop {
+		gap: $space-10;
+	}
+	@include tablet {
+		flex-direction: column;
+	}
+}
+.about-me__image {
+	flex: 0 0 40%;
+}
+
+.about-me__content {
+	align-self: flex-start;
+}
+.about-me__title {
+	margin-bottom: $space-5;
+	.light--title {
+		line-height: $lh-loose-extr-lg;
+		font-size: $fs-6xl;
+		font-weight: 800;
+	}
+	.slim {
+		font-weight: 400;
+	}
+}
+.about-me__text {
+	flex: 1 1 50%;
+	padding-bottom: $space-5;
+}
+.about-me__text p {
+
+	&:first-child {
+		margin-bottom: $space-5;
+	}
+	&:last-child {
+		margin-top: $space-5;
+	}
+}
