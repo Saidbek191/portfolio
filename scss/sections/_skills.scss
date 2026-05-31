@@ -1,0 +1,101 @@
+@use "../abstracts/media" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.skills {}
+.skills__title {
+	text-align: center;
+	margin: $space-15 0;
+}
+.skills__wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: $space-10;
+	row-gap: $space-18;
+	@include laptop {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@include tablet {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@include mobile {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.skills__item {
+	position: relative;
+	overflow: hidden;
+	border: 2px solid $color-dark;
+	padding: $space-9 $space-6;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $space-8;
+	cursor: default;
+	transition: all 0.3s ease;
+	&:hover .icon-figma{
+			color: $color-light;
+		} 
+	&:hover .skills__item-icon {
+			color: $color-light;
+		}
+
+	&:hover {
+		background-color: $color-dark;
+	}
+	&:hover .skills__item-title {
+		opacity: 0;
+		transform: translateY(-5px);
+	}
+	&:hover .skill__level{
+			opacity: 1;
+			transform: translateY(0);
+			color: $color-light;
+	}
+	.icon-js {
+		color: $color-dark;
+		// transition: color 0.3s ease;
+	} 
+	&:hover {
+		color: $color-light;
+	}
+	#icon-text {
+		fill: $color-light;
+		transition: color 0.3s ease;
+		&:hover {
+			fill: $color-dark;
+		}
+	}
+	.icon-figma {
+		margin: 0 auto;
+		width: 50px;
+		height: 50px;
+		color: $color-dark;
+	}
+	
+}
+
+.skill__level {
+	position: absolute;
+	// inset: 0;	
+	bottom: 20px;
+	// left: 0;
+	// display: flex;
+	// align-items: center;
+	// justify-content: flex-end;
+	font-size: $fs-xl;
+	font-weight: 700;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.3s ease;
+}
+
+
+
+.skills__item-icon {
+		width: 56px;
+		height: 56px;
+}
+.skills__item-title {
+}
