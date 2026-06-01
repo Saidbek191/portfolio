@@ -6,6 +6,15 @@
 .skills__title {
 	text-align: center;
 	margin: $space-15 0;
+	@include laptop {
+		margin: $space-14 0;
+	}
+	@include tablet {
+		margin: $space-12 0;
+	}
+	@include mobile {
+		margin: $space-10 0;
+	}
 }
 .skills__wrapper {
 	display: grid;
@@ -13,12 +22,15 @@
 	column-gap: $space-10;
 	row-gap: $space-18;
 	@include laptop {
+		row-gap: $space-16;
 		grid-template-columns: repeat(4, 1fr);
 	}
 	@include tablet {
 		grid-template-columns: repeat(3, 1fr);
+		row-gap: $space-10;
 	}
 	@include mobile {
+		gap: $space-5;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
@@ -34,61 +46,73 @@
 	gap: $space-8;
 	cursor: default;
 	transition: all 0.3s ease;
+	@include laptop {
+		padding: $space-6 $space-4;
+	}
+	@include tablet {
+		padding: $space-5 $space-3;
+	}
+	@include mobile {
+		padding: $space-6;
+	}
 	&:hover .icon-figma{
 			color: $color-light;
 		} 
 	&:hover .skills__item-icon {
 			color: $color-light;
 		}
-
 	&:hover {
 		background-color: $color-dark;
 	}
 	&:hover .skills__item-title {
 		opacity: 0;
-		transform: translateY(-5px);
+		transform: translateY(10px);
 	}
 	&:hover .skill__level{
 			opacity: 1;
 			transform: translateY(0);
 			color: $color-light;
 	}
-	.icon-js {
-		color: $color-dark;
-		// transition: color 0.3s ease;
-	} 
-	&:hover {
-		color: $color-light;
-	}
-	#icon-text {
-		fill: $color-light;
-		transition: color 0.3s ease;
-		&:hover {
-			fill: $color-dark;
+
+		#icon-bg {
+			color: $color-dark;
+			transition: color 0.3s ease;
 		}
-	}
-	.icon-figma {
-		margin: 0 auto;
-		width: 50px;
-		height: 50px;
-		color: $color-dark;
-	}
-	
+		&:hover #icon-bg{
+			color: $color-light;
+		}
+		#icon-text {
+			color: $color-light;
+			transition: color 0.3s ease;
+		} 
+		&:hover #icon-text{
+			color: $color-dark;
+		}
+		.icon-figma {
+			margin: 0 auto;
+			width: 50px;
+			height: 50px;
+			color: $color-dark;
+		}
 }
 
 .skill__level {
-	position: absolute;
-	// inset: 0;	
+	position: absolute;	
 	bottom: 20px;
-	// left: 0;
-	// display: flex;
-	// align-items: center;
-	// justify-content: flex-end;
 	font-size: $fs-xl;
 	font-weight: 700;
 	opacity: 0;
-	transform: translateY(5px);
+	transform: translateY(-10px);
 	transition: all 0.3s ease;
+	@include laptop {
+		font-size: $fs-lg;
+	}
+	@include tablet {
+		font-size: $fs-md;
+	}
+	@include mobile {
+		font-size: $fs-sm;
+	}
 }
 
 
@@ -98,4 +122,8 @@
 		height: 56px;
 }
 .skills__item-title {
+	font-size: $fs-md;
+	font-weight: 700;
+	letter-spacing: -2%;
+	line-height: $lh-normal-sm;
 }
