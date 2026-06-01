@@ -555,72 +555,6 @@ li a:hover::after {
   }
 }
 
-.about-me {
-  margin: 60px 0;
-}
-@media screen and (max-width: 1024px) {
-  .about-me {
-    margin: 56px 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about-me {
-    margin: 48px 0;
-  }
-}
-@media screen and (max-width: 375px) {
-  .about-me {
-    margin: 40px 0;
-  }
-}
-
-.about-me__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-}
-@media screen and (max-width: 1024px) {
-  .about-me__wrapper {
-    gap: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about-me__wrapper {
-    flex-direction: column;
-  }
-}
-
-.about-me__image {
-  flex: 0 0 40%;
-}
-
-.about-me__content {
-  align-self: flex-start;
-}
-
-.title {
-  margin-bottom: 20px;
-  line-height: 3.5;
-  font-size: 48px;
-  font-weight: 800;
-}
-.title .slim {
-  font-weight: 400;
-}
-
-.about-me__text {
-  flex: 1 1 50%;
-  padding-bottom: 20px;
-}
-
-.about-me__text p:first-child {
-  margin-bottom: 20px;
-}
-.about-me__text p:last-child {
-  margin-top: 20px;
-}
-
 .hero__columns {
   display: flex;
   align-items: center;
@@ -787,6 +721,77 @@ li a:hover::after {
   .lines span {
     left: 190%;
   }
+}
+
+.about-me {
+  margin: 60px 0;
+}
+@media screen and (max-width: 1024px) {
+  .about-me {
+    margin: 56px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-me {
+    margin: 48px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-me {
+    margin: 40px 0;
+  }
+}
+
+.about-me__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .about-me__wrapper {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-me__wrapper {
+    flex-direction: column;
+  }
+}
+
+.about-me__image {
+  flex: 0 0 40%;
+}
+
+.about-me__content {
+  align-self: flex-start;
+}
+
+.title {
+  margin-bottom: 20px;
+  line-height: 3.5;
+  font-size: 48px;
+  font-weight: 800;
+}
+.title .slim {
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+.about-me__text {
+  flex: 1 1 50%;
+  padding-bottom: 20px;
+}
+
+.about-me__text p:first-child {
+  margin-bottom: 20px;
+}
+.about-me__text p:last-child {
+  margin-top: 20px;
 }
 
 .projects {
@@ -1040,6 +1045,127 @@ li a:hover::after {
   font-weight: 700;
   letter-spacing: -2%;
   line-height: 1.5;
+}
+
+.experience {
+  background-color: #000;
+}
+
+.experience__title {
+  text-align: center;
+  margin: 60px 0;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .experience__title {
+    margin: 56px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience__title {
+    margin: 48px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .experience__title {
+    margin: 40px 0;
+  }
+}
+
+.experience__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .experience__wrapper {
+    gap: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience__wrapper {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .experience__wrapper {
+    gap: 20px;
+  }
+}
+
+.experience__body {
+  padding: 24px 32px;
+  border: 2px solid #27272a;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  cursor: default;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.experience__body:hover {
+  background-color: #27272a;
+  box-shadow: 0px 0px 5px 2px #71717a;
+}
+.experience__body:last-child {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .experience__body:last-child {
+    margin-bottom: 56px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience__body:last-child {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .experience__body:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .experience__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
+.experience__header .date__exp {
+  color: #d4d4d8;
+  line-height: 1.25;
+}
+
+.logo-title__experience {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.logo-title__experience .logo__exp {
+  width: 32px;
+  height: 32px;
+}
+.logo-title__experience .title__exp {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.75;
+}
+@media screen and (max-width: 375px) {
+  .logo-title__experience .title__exp {
+    font-size: 20px;
+  }
+}
+
+.experience__text {
+  line-height: 1.5;
+  letter-spacing: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */

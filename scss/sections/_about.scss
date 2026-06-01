@@ -38,6 +38,9 @@
 	.slim {
 		font-weight: 400;
 	}
+	@include mobile {
+		font-size: $fs-xl;
+	}
 }
 .about-me__text {
 	flex: 1 1 50%;

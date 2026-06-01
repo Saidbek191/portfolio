@@ -13,10 +13,11 @@
 @use './layout/footer';
 @use './layout/header';
 
-@use './sections/about';
 @use './sections/hero';
+@use './sections/about';
 @use './sections/project';
 @use './sections/skills';
+@use './sections/experience';
 @use './sections/contact';
 
 @use './abstracts/media' as *;
